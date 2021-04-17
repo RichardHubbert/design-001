@@ -37,4 +37,18 @@ a {
 
 .Hero p {
   color: rgba(255, 255, 255, 0.8);
+  font-size: 30px;
+  line-height: 1.5;
+}
+
+.Hero a {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 9px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  cursor: pointer;
 }
