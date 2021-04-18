@@ -7,7 +7,7 @@ import './Header.css'
 const Header = ({ siteTitle }) => (
   <div className="Header">
     <div className="HeaderGroup">
-      <Link to="/"><img src={logo}  width="" /></Link>
+      <Link to="/"><img src={logo}  width="30" /></Link>
       <Link to="/courses">Courses</Link>
       <Link to="/dowmloads">Downloads</Link>
       <Link to="/workshops">Workshops</Link>
