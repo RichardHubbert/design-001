@@ -10,10 +10,12 @@ import logoInvision from '../images/logo-invision.png'
 import logoReact from '../images/logo-react.png'
 import logoSketch from '../images/logo-sketch.png'
 import logoSwift from '../images/logo-swift.png'
+import cardOne from '../images/Wallpaper2.jpg'
+import Card from "../components/Card"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Home" /> 
     <div className="Hero">
       <div className="HeroGroup">
         <h1>We <br />Design and Develop <br />UI | UX</h1>
@@ -41,6 +43,28 @@ const IndexPage = () => (
            />
           </path> 
         </svg>
+      </div>
+    </div> 
+    
+    <div className="Cards">
+      <h2>11 Courses, more coming</h2>
+      <div className="CardGroup">
+        <Card 
+          image="images/wallpaper.jpg"
+          title="Design System"
+          text="12 Sections"/>
+        <Card 
+          image="images/wallpaper2.jpg"
+          title="React for Designers"
+          text="12 Sections"/>
+        <Card 
+          image="images/wallpaper3.jpg"
+          title="Sound Design"
+          text="5 Sections"/>
+        <Card 
+          image="images/wallpaper4.jpg"
+          title="ARKit 2"
+          text="10 Sections"/>
       </div>
     </div>
   </Layout>

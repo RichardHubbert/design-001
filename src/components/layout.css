@@ -34,6 +34,9 @@ a {
   color: #ffffff;
   font-size: 60px;
   line-height: 1.2;
+  background: linear-gradient(104deg, #d32a14 10%,#e6a900 50%, #a9ec0d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   opacity: 0;
   animation: HeroAnimation;
   animation-duration: 3s; 
@@ -104,4 +107,40 @@ a {
   margin: 50px 0;
   justify-items: center;
   z-index: 99;
+}
+
+@media (max-width: 640px) {
+  .Hero .Logos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.Cards h2 {
+  margin: 50px 20px;
+  font-size: 60px;
+  text-align: center;
+  font-weight: 700;
+  background: linear-gradient(104deg, #000000 0,#e60000 50%, #ec8c0d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.CardGroup {
+  margin: 50px 40px 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  justify-items: center;
+}
+
+@media (max-width: 1060px) {
+  .CardGroup {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 720px) {
+  .CardGroup {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
