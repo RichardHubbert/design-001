@@ -120,7 +120,7 @@ a {
   font-size: 60px;
   text-align: center;
   font-weight: 700;
-  background: linear-gradient(104deg, #000000 0,#e60000 50%, #ec8c0d 100%);
+  background: linear-gradient(104deg, #680fdd 10%,#11dfee 50%, #a9ec0d 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

@@ -5,6 +5,10 @@
     z-index: 100;
  }
 
+ .HeaderScrolled {
+     background: rgba(0, 0, 0, 0.8);
+ }
+
  .HeaderGroup {
     max-width: 800px;
     margin: 0 auto ; 
