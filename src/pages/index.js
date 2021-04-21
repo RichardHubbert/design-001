@@ -11,7 +11,25 @@ import logoReact from '../images/logo-react.png'
 import logoSketch from '../images/logo-sketch.png'
 import logoSwift from '../images/logo-swift.png'
 import cardOne from '../images/Wallpaper2.jpg'
-import Card from "../components/Card"
+import Card from "../components/Card";
+import Section from "../components/Section";
+import Wave from "../components/Wave";
+import staticdata from '../../staticdata.json'
+import Cell from "../components/Cell";
+import styled from 'styled-components'
+
+const SectionCaption = styled.p`
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #333333;
+  text-align: center;
+`
+
+const SectionCellGroup = styled.div`
+`
+
+
 
 const IndexPage = () => (
   <Layout>
@@ -30,45 +48,54 @@ const IndexPage = () => (
           <img src={logoSketch}  width="50" />  
           <img src={logoSwift}  width="50 " />  
         </div>
-        <svg width="100%" height="172" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill="white">
-            <animate repeatCount="indefinite" fill="freeze" attributeName="d" dur="10s" values="M0 25.9086C277 84.5821 433 65.736 720 25.9086C934.818 -3.9019 1214.06 -5.23669 1442 8.06597C2079 45.2421 2208 63.5007 2560 25.9088V171.91L0 171.91V25.9086Z;
-
-            M0 87.1596C316 87.1597 444 160 884 52.0001C1324 -55.9999 1320.29 34.966 1538 71.251C1814 117.251 2156 189.252 2560 87.1597V233.161L0 233.161V87.1596Z;
-
-            M0 53.6584C158 11.0001 213 0 363 0C513 0 855.555 115.001 1154 115.001C1440 115.001 1626 -38.0004 2560 53.6585V199.66L0 199.66V53.6584Z;
-
-            M0 25.9086C277 84.5821 433 65.736 720 25.9086C934.818 -3.9019 1214.06 -5.23669 1442 8.06597C2079 45.2421 2208 63.5007 2560 25.9088V171.91L0 171.91V25.9086Z
-            "
-           />
-          </path> 
-        </svg>
+        <Wave />
       </div>
     </div> 
     
     <div className="Cards">
       <h2>11 Courses, more coming</h2>
       <div className="CardGroup">
+      <Link to="http://www.chasesidedesign.com">
         <Card 
           image="images/wallpaper.jpg"
           title="Design System"
-          text="12 Sections"/>
+          text="12 Sections"/></Link>
+      <Link to="http://www.chasesidedesign.com">
         <Card 
           image="images/wallpaper2.jpg"
           title="React for Designers"
-          text="12 Sections"/>
+          text="12 Sections"/></Link>
+      <Link to="http://www.chasesidedesign.com">          
         <Card 
           image="images/wallpaper3.jpg"
           title="Sound Design"
-          text="5 Sections"/>
+          text="5 Sections"/></Link>
+      <Link to="http://www.chasesidedesign.com">         
         <Card 
           image="images/wallpaper4.jpg"
           title="ARKit 2"
-          text="10 Sections"/>
+          text="10 Sections"/></Link>
       </div>
     </div>
+    <Section
+      image="images/wallpaper.jpg"
+      logo="images/logo-react.png"
+      title="React for Designers"
+      text="Toffee macaroon jelly beans marzipan cupcake pudding cheesecake wafer topping. Cotton candy biscuit donut cake macaroon. Caramels topping pastry. Chocolate cake gingerbread jujubes ice cream cupcake cotton candy dessert jelly-o biscuit. Pastry cake cookie gingerbread chupa chups marzipan donut dragée. Caramels powder dragée chocolate cake. Lollipop sesame snaps chocolate bar wafer chocolate bar chocolate sesame snaps chocolate bar. Chocolate donut macaroon powder cotton candy icing fruitcake donut cotton candy. Fruitcake liquorice pudding jelly-o gummies bear claw chupa chups biscuit cheesecake. Soufflé sweet cake. Bear claw sesame snaps bear claw soufflé jelly pudding. Cookie jelly-o ice cream powder cake. Marzipan biscuit cotton candy cotton candy croissant cake."
+    />
+    
+    <SectionCaption>12 Sections - 6 hours</SectionCaption>
+    <SectionCellGroup>
+    {staticdata.cells.map(cell => (
+        <Cell 
+          title={cell.title}
+          image={cell.image} />
+      ))}
+    </SectionCellGroup>
   </Layout>
 )
+
+
 
 export default IndexPage
 
