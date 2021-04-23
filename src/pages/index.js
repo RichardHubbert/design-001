@@ -20,13 +20,25 @@ import styled from 'styled-components'
 
 const SectionCaption = styled.p`
   font-weight: 600;
-  font-size: 20px;
+  font-size: 50px;
   text-transform: uppercase;
-  color: #333333;
+  background: linear-gradient(104deg, #680fdd 10%,#11dfee 50%, #a9ec0d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-align: center;
 `
 
 const SectionCellGroup = styled.div`
+  max-width: 800px;
+  margin: 0 auto 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  padding: 0 20px;
+
+  @media (max-width:720px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `
 
 
@@ -98,6 +110,7 @@ const IndexPage = () => (
 
 
 export default IndexPage
+
 
 
 

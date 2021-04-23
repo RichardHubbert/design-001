@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
+import Footer from "./Footer"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -18,6 +19,15 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
+        }
+      }
+      allContentfulLink(sort: {fields: [createdAt], order: ASC}) {
+        edges {
+          node {
+            title
+            url
+            createdAt
+          }
         }
       }
     }
@@ -28,6 +38,10 @@ const Layout = ({ children }) => {
     <Header />
       <div>
         {children}
+        <Footer data={data}>
+        Sugar plum dessert pudding apple pie pudding powder cupcake ice cream. <a href="mailto:richardhubbert@gmail.com">Email Me</a> Croissant wafer tart cake croissant cupcake. 
+
+        </Footer>
         <footer>
           ChasesideDesign © {new Date().getFullYear()}
           {` `}
@@ -42,3 +56,5 @@ Layout.propTypes = {
 }
 
 export default Layout
+
+

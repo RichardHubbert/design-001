@@ -2,47 +2,52 @@
     "cells": [
         {
             "title": "Intro to React 1",
-            "image": "http://www.chasesidedesign.com/reactimages/logo-react.png"
+            "image": "http://www.chasesidedesign.com/reactimages/testIcon.png"
         },
 
         {
             "title": "Intro to React 2",
-            "image": "http://www.chasesidedesign.com/reactimages/logo-react.png"
+            "image": "http://www.chasesidedesign.com/reactimages/testIcon.png"
         },
 
         {
             "title": "Intro to React 3",
-            "image": "http://www.chasesidedesign.com/reactimages/logo-react.png"
+            "image": "http://www.chasesidedesign.com/reactimages/testIcon.png"
         },
         
         {
-            "title": "Intro to React 3",
-            "image": "http://www.chasesidedesign.com/reactimages/logo-react.png"
-        },
-
-        {
-            "title": "Intro to React 3",
-            "image": "http://www.chasesidedesign.com/reactimages/logo-react.png"
-        },
-
-        {
-            "title": "Intro to React 3",
-            "image": "http://www.chasesidedesign.com/reactimages/logo-react.png"
-        },
-
-        {
-            "title": "Intro to React 3",
-            "image": "http://www.chasesidedesign.com/reactimages/logo-react.png"
-        },
-
-        {
-            "title": "Intro to React 3",
-            "image": "http://www.chasesidedesign.com/reactimages/logo-react.png"
-        },
-
-        {
             "title": "Intro to React 4",
-            "image": "http://www.chasesidedesign.com/reactimages/logo-react.png"
+            "image": "http://www.chasesidedesign.com/reactimages/testIcon.png"
+        },
+
+        {
+            "title": "Intro to React 5",
+            "image": "http://www.chasesidedesign.com/reactimages/testIcon.png"
+        },
+
+        {
+            "title": "Intro to React 6",
+            "image": "http://www.chasesidedesign.com/reactimages/testIcon.png"
+        },
+
+        {
+            "title": "Intro to React 7",
+            "image": "http://www.chasesidedesign.com/reactimages/testIcon.png"
+        },
+
+        {
+            "title": "Intro to React 8",
+            "image": "http://www.chasesidedesign.com/reactimages/testIcon.png"
+        },
+
+        {
+            "title": "Intro to React 9",
+            "image": "http://www.chasesidedesign.com/reactimages/testIcon.png"
+        },
+
+        {
+            "title": "Intro to React 10",
+            "image": "http://www.chasesidedesign.com/reactimages/testIcon.png"
         }
     ]
 }

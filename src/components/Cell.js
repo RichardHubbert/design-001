@@ -9,9 +9,10 @@ const CellGroup = styled.div`
 `
 
 const CellImage = styled.div`
-    width: 65px;
-    height: 65px;
-    background: #000000;
+    width: 60px;
+    height: 60px;
+    background: #ffffff;
+    border: 1px solid #333333;
     border-radius: 10px;
     background-image: url(${props => props.image});
     background-size: 60px;
